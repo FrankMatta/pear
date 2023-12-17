@@ -1,0 +1,96 @@
+@import "../../styles/shared.scss";
+
+.pearCard {
+  display: flex;
+  border-radius: 30px;
+  background: #181818;
+  padding: 20px;
+  margin-bottom: 4rem;
+  width: 80%;
+  align-self: flex-end;
+
+  &:nth-child(2) {
+    align-self: flex-start;
+  }
+
+  @include lg {
+    flex-direction: column !important;
+  }
+}
+
+// Left and right direction
+.pearCard.left {
+  flex-direction: row;
+}
+
+.pearCard.right {
+  flex-direction: row-reverse;
+}
+
+// Image
+.pearCard .image {
+  width: 50%;
+}
+
+// Description
+.pearCard .description {
+  width: 60%;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin: 0 5rem;
+
+  @include lg {
+    width: 100%;
+  }
+
+  @include md {
+    margin: 0;
+  }
+}
+
+// Utils
+span.green {
+  color: var(--color-green);
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & .title-wrapper {
+    .top-title,
+    .bottom-title,
+    .and {
+      font-size: 5rem;
+    }
+    .and {
+      color: var(--color-green);
+    }
+  }
+}
+.column-image-wrapper {
+  background: #0e0e0e;
+  padding: 5rem 3rem;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include lg {
+    width: 105%;
+    transform: translate(0, 0) !important;
+    margin: 50px 0;
+  }
+
+  @include md {
+    width: 100%;
+  }
+
+  & .column-image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,101 @@
+@import '../../styles//shared.scss';
+
+.hero_section {
+	border-radius: 30px;
+	background: #181818;
+	margin: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.unleash-the-power-of {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.unleash-the-power-of .text-wrapper {
+	color: #ffffff;
+	font-size: 10rem;
+	font-weight: 500;
+	margin: 0 1rem;
+
+	@include lg {
+		font-size: 8rem;
+	}
+
+	@include md {
+		font-size: 6rem;
+	}
+
+	@include sm {
+		font-size: 4rem;
+	}
+}
+
+.unleash-the-power-of .span {
+	color: #50ff97;
+	font-size: 10rem;
+	font-weight: 500;
+	margin: 0 1rem;
+
+	@include lg {
+		font-size: 8rem;
+	}
+
+	@include md {
+		font-size: 6rem;
+	}
+
+	@include sm {
+		font-size: 4rem;
+	}
+}
+
+.hero-phrase {
+	margin: 0rem 1rem 3rem;
+	font-size: 2rem;
+	line-height: 1.5;
+	@include md {
+		text-align: center;
+	}
+}
+
+.actionButton_hero {
+	display: flex;
+	justify-content: space-between;
+	width: 290px;
+	margin-top: 1rem;
+
+	.whiteButton {
+		background: transparent;
+		color: white;
+		padding: 10px 20px;
+		cursor: pointer;
+		border-radius: 9.054px;
+		border: 1.584px solid #fff;
+		transition: background-color 0.3s ease; /* Add a smooth transition effect */
+	}
+
+	.whiteButton:hover {
+		background-color: rgba(
+			255,
+			255,
+			255,
+			0.2
+		); /* Lighten the background on hover */
+	}
+}
+
+.hero-image-container {
+	width: 100%;
+	margin-top: 80px;
+	max-width: 1500px;
+
+	& img {
+		width: 100%;
+	}
+}

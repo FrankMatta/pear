@@ -1,0 +1,61 @@
+@import '../../styles/shared.scss';
+
+.head_navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 100px;
+
+	@include md {
+		padding: 15px 40px;
+	}
+
+	.nav_logo {
+		width: 200px;
+		@include md {
+			width: 100px;
+		}
+	}
+}
+
+.logoCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 500px;
+}
+
+.actionButton {
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+
+	p {
+		cursor: pointer;
+	}
+}
+
+.headerIconText {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	.headerIconData {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 10px;
+
+		p:first-child {
+			margin-right: 10px;
+			color: #a4a4a4;
+		}
+		p:last-child {
+			color: var(--color-white);
+		}
+	}
+}

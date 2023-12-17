@@ -1,0 +1,72 @@
+@import '../../styles/shared.scss';
+
+.footerContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5rem 2rem;
+
+	@include md {
+		flex-direction: column-reverse;
+	}
+
+	& .left {
+		margin-top: 2rem;
+	}
+
+	& .contractAdress-container {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 2rem;
+
+		& .address {
+			margin-bottom: 2rem;
+			@include md {
+				margin-top: 0;
+				word-wrap: break-word;
+			}
+		}
+	}
+
+	& .social-media {
+		margin: 1rem 0;
+	}
+
+	& .message {
+		max-width: 500px;
+	}
+	& .copyRight {
+		margin-top: 2rem;
+		color: #ababab;
+	}
+
+	& .links {
+		display: flex;
+		gap: 20px;
+		align-items: left;
+		color: #ababab;
+		cursor: pointer;
+		cursor: pointer;
+		transition: color 0.3s ease;
+
+		& .left-column,
+		.right-column {
+			display: flex;
+			flex-direction: column;
+		}
+
+		& .left {
+			margin-right: 2rem;
+		}
+	}
+
+	.link {
+		cursor: pointer;
+		transition: color 0.3s ease; /* Add transition for smooth color change */
+
+		&:hover {
+			color: #ffffff; /* Change color on hover */
+		}
+	}
+}

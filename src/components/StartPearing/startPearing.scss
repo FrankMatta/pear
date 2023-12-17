@@ -1,0 +1,69 @@
+@import "../../styles/shared.scss";
+
+.startPearingContainer {
+  display: flex;
+  margin: 0rem 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #181818;
+  border-radius: 30px;
+
+  @include lg {
+    padding: 2rem 0 0 0;
+    flex-direction: column;
+  }
+}
+
+.startPearingContainer .leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: 10rem;
+
+  @include lg {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0rem;
+    margin-left: 0rem;
+  }
+
+  h3 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #e4e4e4;
+    margin: 0;
+  }
+  p {
+    font-size: 2rem;
+    color: #e4e4e4;
+    width: 550px;
+    text-align: left;
+    @include lg {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.startPearingContainer .rightSide {
+  & img {
+    width: 100%;
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  & .pear-mobile {
+    display: none;
+
+    @include lg {
+      display: block;
+      width: 100%;
+    }
+  }
+}

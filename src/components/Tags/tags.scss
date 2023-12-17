@@ -1,0 +1,44 @@
+@import "../../styles/shared.scss";
+
+.tag_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+  gap: 20px;
+  @include md {
+    flex-direction: column;
+  }
+}
+
+// Rectangle dimensions
+.singleTag {
+  width: 300px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 14.67px;
+  background: #181818;
+  padding: 8px;
+  color: white;
+
+  .tagPhoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: var(--color-green);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    img {
+      object-fit: contain;
+    }
+  }
+
+  p {
+    margin-left: 30px;
+  }
+}

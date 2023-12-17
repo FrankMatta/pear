@@ -1,0 +1,17 @@
+.details {
+	margin: 0 2rem;
+	max-width: 1200px;
+	margin: auto;
+}
+.details-text_container {
+  color: var(--color-text-gray);
+  font-size: 2rem;
+  margin: 10rem 0;
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 5rem;
+    padding: 0 3rem;
+  }
+}
